@@ -134,7 +134,6 @@ def main():
         print(f"File {input_file} does not exist.")
         return
     max_steps = int(input("Enter the maximum number of steps: "))
-    initial_temp = float(input("Enter the starting temperature: "))
 
     grid = decode_grid(input_file)
     print("Starting Board:")

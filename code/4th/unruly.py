@@ -2,10 +2,9 @@ import string
 import time
 import os
 
-# Global variable to keep track of the number of nodes expanded
 node_count = 0
 
-# Function to check if placing a value at (x, y) is valid according to the puzzle rules
+# Function to check if the grid is valid after placing a value at a position
 def is_valid(grid, x, y, value):
 
     width = len(grid[0])
@@ -44,7 +43,7 @@ def is_valid(grid, x, y, value):
 
     return True
 
-# Recursive function to solve the grid using backtracking
+# Recursive function to solve the grid
 def solve_grid(grid, max_nodes):
     global node_count
     width = len(grid[0])
@@ -79,10 +78,10 @@ def decode_grid(input_file):
     for char in positions:
         if char.islower():
             step = string.ascii_lowercase.index(char) + 1
-            color = "W"  # White
+            color = "W"
         elif char.isupper():
             step = string.ascii_uppercase.index(char) + 1
-            color = "B"  # Black
+            color = "B"
         else:
             continue
 
