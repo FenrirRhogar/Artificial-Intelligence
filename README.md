@@ -25,5 +25,3 @@ This repository is structured into **two exercise sets**, covering foundational 
    - Modeling real-world problems using quantifiers, predicates, and unification algorithms.
 
 ---
-
-## 🗂 Repository Structure
